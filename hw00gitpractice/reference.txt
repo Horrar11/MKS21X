@@ -1,5 +1,5 @@
-clone
-commit
-add
-push
-pull
+clone - clones a nonexisting repo to your current directory
+commit - commit a comment
+add - add file to get tracked
+push - push changes to the server
+pull - pull the most up to date version from the server
