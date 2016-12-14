@@ -1,0 +1,8 @@
+public class Barcode implements Comparable<Barcode>{
+    private String _zip;
+    private int _checkDigit;
+
+    public void Barcode(String zip) throws InvalidValueException, InvalidLengthException{
+	try {
+	    
+}

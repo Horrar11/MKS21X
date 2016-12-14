@@ -11,20 +11,27 @@ public class Sorts{
   */
     public static void selectionSort(int[] data){
 	int small;
-	int loc;
+	int location = 0;
 	for(int index = 0; index < data.length; index++){
 	    small = data[index];
 	    for(int pos = index; pos < data.length; pos++){
 		if(data[pos] < small){
 		    small = data[pos];
-		    loc = pos;
+		    location = pos;
+		    swap(data,index,location);
 		}
 	    }
-	    swap(data, index, loc);
 	}
     }
     public static void swap(int[] data, int a, int b){
 	int c = data[a];
 	data[a] = data[b];
 	data[b] = c;
+    }
+
+
+    public static void insertionSort(int[] data){
+	int temporary;
+	
+    }
 }
