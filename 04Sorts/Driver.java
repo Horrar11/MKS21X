@@ -10,5 +10,10 @@ public class Driver{
 	for(int i = 0;i < testInsert.length;i++){
 	    System.out.println(testInsert[i]);
 	}
+	int[]bubbleTest = {2,6,3,5,7,4,5,7,6,3,9};
+	Sorts.bubbleSort(bubbleTest);
+	for(int i = 0; i < bubbleTest.length; i++){
+	    System.out.println(bubbleTest[i]);
+	}
     }
 }

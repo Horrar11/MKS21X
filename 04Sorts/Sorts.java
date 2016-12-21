@@ -31,7 +31,29 @@ public class Sorts{
 
 
     public static void insertionSort(int[] data){
-	int temporary;
-	
+	for(int i = 1; i < data.length; i++){
+	    int old = data[i];
+	    int index = i;
+	    while(index > 0 && old < data[index-1]){
+		data[index] = data[index-1];
+		index--;
+	    }
+	    data[index] = old;
+    }
+    }
+
+    public static void bubbleSort(int[] data){
+	boolean swapped = false;
+	for(int pos = 0; pos < data.length; pos++){
+	    if(pos<data.length-1){
+	    if(data[pos] > data[pos + 1]){
+		swap(data, pos, pos + 1);
+		swapped = true;
+	    }
+	    }
+	}
+	if(swapped){
+	    bubbleSort(data);
+	}
     }
 }
